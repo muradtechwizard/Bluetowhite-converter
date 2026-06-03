@@ -1,9 +1,13 @@
 from setuptools import setup
+import os
 
 APP = ['main.py']
 DATA_FILES = []
+
 OPTIONS = {
     'argv_emulation': True,
+    # Remove or comment out the iconfile line
+    # 'iconfile': 'app_icon.icns',  
     'plist': {
         'CFBundleName': "BlueWhiteConverter",
         'CFBundleDisplayName': "Blue & White Converter",
